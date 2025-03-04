@@ -11,6 +11,14 @@
     <div id="root"></div>
 
     <script>
+      console.log(this);
+
+      function foo() {
+        console.log(this);
+      }
+
+      foo();
+
       const para = document.createElement("p");
 
       para.textContent = "This paragraph is created using createElement!";

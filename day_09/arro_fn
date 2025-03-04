@@ -1,0 +1,8 @@
+const person = {
+  name: "ram",
+  age: 22,
+  greet: function () {
+    return `Hello , you are ${this.age} years old`;
+  },
+};
+console.log(person.greet());
