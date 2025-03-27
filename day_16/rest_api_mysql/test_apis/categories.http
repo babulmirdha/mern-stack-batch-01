@@ -1,0 +1,39 @@
+
+### Create Category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name": "Smart Watch",
+    "description": "All kinds of smart Watch"
+}
+
+### Get All Categories
+GET http://localhost:3000/categories
+
+
+### Get Product By Id
+GET http://localhost:3000/products/2
+
+
+
+### Update Product
+PUT http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "name": "iPhone",
+    "price": 200
+}
+
+### Partial Update Product 
+PATCH  http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "price": 1000
+}
+
+
+### Delete Product
+DELETE  http://localhost:3000/products/1
