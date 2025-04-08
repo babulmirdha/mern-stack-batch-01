@@ -1,0 +1,11 @@
+
+@base_url = http://192.168.10.249:3000
+
+### Create Category
+POST {{base_url}}/product-categories
+Content-Type: application/json
+
+{
+    "product_id": "2",
+    "category_id": "5"
+}
