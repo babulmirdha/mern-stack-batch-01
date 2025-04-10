@@ -1,0 +1,16 @@
+@base_url = http://192.168.10.249:3000
+
+
+### Create order_items
+POST {{base_url}}/order-items
+Content-Type: application/json
+
+{
+    "customer_id":"1",
+    "product_id":"2",
+    "price":"500",
+    "quantity":"5"
+}
+
+### Get all order_items
+GET {{base_url}}/order-items

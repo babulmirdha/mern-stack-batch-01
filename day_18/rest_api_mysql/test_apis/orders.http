@@ -1,0 +1,13 @@
+@base_url = http://192.168.10.249:3000
+
+
+### Create customers
+POST {{base_url}}/orders
+Content-Type: application/json
+
+{
+    "customer_id": "1"
+}
+
+### Get all orders
+GET {{base_url}}/orders

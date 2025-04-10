@@ -1,0 +1,41 @@
+
+
+@base_url = http://192.168.10.249:3000
+
+### Create Category
+POST {{base_url}}/categories
+Content-Type: application/json
+
+{
+    "name": "Computer Accessories"
+}
+
+### Get All Categories
+GET {{base_url}}/categories
+
+
+### Get Product By Id
+GET {{base_url}}/products/2
+
+
+
+### Update Product
+PUT {{base_url}}/products/1
+Content-Type: application/json
+
+{
+    "name": "iPhone",
+    "price": 200
+}
+
+### Partial Update Product 
+PATCH  {{base_url}}/products/1
+Content-Type: application/json
+
+{
+    "price": 1000
+}
+
+
+### Delete Product
+DELETE  {{base_url}}/products/1

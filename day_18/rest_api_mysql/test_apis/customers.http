@@ -1,0 +1,18 @@
+@base_url = http://192.168.10.249:3000
+
+
+### Create customers
+POST {{base_url}}/customers
+Content-Type: application/json
+
+{
+    "name": "Babul Mirdha",
+    "address": "Mirpur, Dhaka",
+    "mobile": "+8801717xxxxxx",
+    "email": "bm@gm.com"
+}
+
+### Get All Customers
+GET {{base_url}}/customers
+
+

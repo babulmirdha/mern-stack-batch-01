@@ -1,0 +1,42 @@
+### Video Tutorial
+https://youtu.be/Kxp5h8tXdFE
+
+
+@base_url = http://192.168.10.249:3000
+
+### Get All Products
+GET {{base_url}}/products
+
+
+### Get Product By Id
+GET {{base_url}}/products/2
+
+### Create Product
+POST {{base_url}}/products
+Content-Type: application/json
+
+{
+    "name": "Monitor",
+    "price": 150000
+}
+
+### Update Product
+PUT {{base_url}}/products/1
+Content-Type: application/json
+
+{
+    "name": "iPhone",
+    "price": 200
+}
+
+### Partial Update Product 
+PATCH  {{base_url}}/products/1
+Content-Type: application/json
+
+{
+    "price": 1000
+}
+
+
+### Delete Product
+DELETE  {{base_url}}/products/1
